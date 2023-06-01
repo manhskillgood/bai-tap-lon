@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lê Đức Mạnh, CNTT 16-01">
+    <title>Trang web âm nhạc</title>
+    <link rel="stylesheet" href="manh.css">
+    <style>
+        body {
+            background-image: url("https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: cover;
+        }
+
+        .song audio {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manh's music</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="file:///C:/Users/Manh/web%20nhac%20trung.html">Nhạc Trung Quốc</a></li>
+            <li><a href="file:///C:/Users/Manh/web%20nhac%20han.html">Nhạc Hàn</a></li>
+          
+        </ul>
+    </nav>
+
+    <main>
+        <section id="trung-quoc">
+            <h2>Nhạc Trung Quốc</h2>
+            <div class="song-list">
+                <div class="song">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2gmEBpk4LoWbGtfqArogOHhijNFm6LquwlQ&usqp=CAU" alt="Bài hát 1">
+                    <audio controls>
+                        <source src="AcMaDenTuThienDuong-DangTuKyGEM-4301353.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Ác ma đến từ thiên đường</p>
+                </div>
+                <div class="song">
+                    <img src="https://avatar-ex-swe.nixcdn.com/song/2023/02/10/1/1/b/f/1676004847611_640.jpg" alt="Bài hát 2">
+                    <audio controls>
+                        <source src="LaAnh-MongNhienMengRan-7839255.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Là anh</p>
+                </div>
+                <div class="song">
+                    <img src="https://i1.sndcdn.com/artworks-rIVCTGkqcYDzOnuj-UU5esg-t500x500.jpg" alt="Bài hát 3">
+                    <audio controls>
+                        <source src="ThoiKhongSaiLech-NgaiThan-6919123.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Thời không sai lệch</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="han">
+            <h2>Nhạc Hàn</h2>
+            <div class="song-list">
+                <div class="song">
+                    <img src="https://www.billboard.com/wp-content/uploads/2022/09/BLACKPINK-%E2%80%98Shut-Down-billboard-1548.jpg" alt="Bài hát 1">
+                    <audio controls>
+                        <source src="ShutDown-BLACKPINK-7887142.mp3" type="audio/mp3">
+                    </audio>
+                    <p>ShutDown</p>
+                </div>
+                <div class="song">
+                    <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/15/1081287/299352130_1589482844.jpg" alt="Bài hát 2">
+                    <audio controls>
+                        <source src="PinkVenom-BLACKPINK-7802564.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Pink Vennom</p>
+                </div>
+                <div class="song">
+                    <img src="https://akcdn.detik.net.id/visual/2022/08/23/blackpink-1_169.jpeg?w=900&q=90" alt="Bài hát 3">
+                    <audio controls>
+                        <source src="TypaGirl-BLACKPINK-7887143.mp3" type="audio/mp3">
+                    </audio>
+                    <p>Type girl</p>
+                </div>
+            </div>
+        </section>
+
+        
+            </div>
+        </section>
+    </main>
+    <div id="snow-container"></div>
+
+    <script>
+        function createSnowflake() {
+            const snowflake = document.createElement("div");
+            snowflake.classList.add("snowflake");
+            snowflake.style.left = Math.random() * window.innerWidth + "px";
+            snowflake.style.animationDuration = Math.random() * 3 + 2 + "s";
+            snowflake.style.opacity = Math.random();
+            snowflake.style.fontSize = Math.random() * 10 + 10 + "px";
+
+            document.getElementById("snow-container").appendChild(snowflake);
+
+            setTimeout(() => {
+                snowflake.remove();
+            }, 5000);
+        }
+
+        setInterval(createSnowflake, 100);
+    </script>
+    <h2>Thông tin liên hệ</h2>
+    <ul>
+      <li>Email:Leducmanh19102004@gmail.com</li>
+      
+</body>
+</html>
